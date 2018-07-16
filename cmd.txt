@@ -1,0 +1,4 @@
+ sudo docker build -t keep .
+ sudo docker run --rm --name=keep --net=host --volume=/var/run/docker.sock:/tmp/docker.sock keep
+ sudo docker logs --details keep
+ sudo docker ps
